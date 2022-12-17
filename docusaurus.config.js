@@ -8,11 +8,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Aave GraphQL",
   tagline: "Aave GraphQL Documentation",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://aaveql.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/aave-graphql.png",
+  favicon: "img/aaveql.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -27,16 +27,6 @@ const config = {
     locales: ["en"],
   },
 
-  plugins: [
-    [
-      "docusaurus-graphql-plugin",
-      {
-        // can be a path, a glob or an URL
-        schema: "schemes/awdwadwa-v3.graphql",
-      },
-    ],
-  ],
-
   presets: [
     [
       "classic",
@@ -44,10 +34,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          sidebarCollapsible: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/justmert/aave-graphql-doc",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -60,10 +51,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Aave GraphQL",
+        title: "AaveQL",
         logo: {
-          alt: "Aave GraphQL Logo",
-          src: "img/aave-graphql.png",
+          alt: "AaveQL Logo",
+          src: "img/aaveql.png",
         },
         items: [
           {
@@ -73,15 +64,15 @@ const config = {
             label: "Documentation",
           },
           {
-            href: "https://github.com/justmert/aave-graphql",
+            href: "https://github.com/justmert/aave-graphql-doc",
             label: "GitHub",
             position: "right",
           },
         ],
       },
-      footer: {
-        style: "dark",
-      },
+      // footer: {
+      //   style: "dark",
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
