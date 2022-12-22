@@ -85,10 +85,10 @@ function HomepageHeader() {
 
 function Feature({ png, title, editor, doc }) {
   return (
-    <div className={clsx(`col col--4`, styles.styleCard)}>
+    <div className={clsx(`col col--4`, styles.styleCard)} style={{paddingBottom: 25, paddingTop:25}}>
       <div className="text--center">
         {/* <Svg className={styles.featureSvg} role="img" /> */}
-        <img style={{ height: 150 }} role="img" src={png}></img>
+        <img style={{ height: 150, paddingBottom:10 }} role="img" src={png}></img>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

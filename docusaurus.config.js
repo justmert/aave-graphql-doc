@@ -56,7 +56,7 @@ const config = {
       footer: {
         links: [
           {
-            html: `Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://github.com/justmert" target="_blank">Mert Köklü</a>`
+            html: `Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://github.com/justmert" target="_blank">Mert Köklü</a> for <strong>AAVE</strong> community.`
           },
         ],
       },
