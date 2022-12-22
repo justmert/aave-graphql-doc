@@ -3,6 +3,7 @@ id: objects
 title: Objects
 slug: objects
 sidebar_position: 4
+description: Objects of the Graphql Schema
 ---
 
 ## _Block_

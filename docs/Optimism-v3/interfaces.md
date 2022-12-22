@@ -3,6 +3,7 @@ id: interfaces
 title: Interfaces
 slug: interfaces
 sidebar_position: 5
+description: Interfaces of the Graphql Schema
 ---
 
 ## UserTransaction

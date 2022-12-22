@@ -3,6 +3,7 @@ id: scalars
 title: Scalars
 slug: scalars
 sidebar_position: 9
+description: Scalars of the Graphql Schema
 ---
 
 ## BigDecimal

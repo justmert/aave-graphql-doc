@@ -22,6 +22,8 @@ const config = {
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+
+  
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -38,7 +40,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/justmert/aave-graphql-doc",
+            "https://github.com/justmert/aave-graphql-doc/tree/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -46,15 +48,25 @@ const config = {
       }),
     ],
   ],
+  
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      footer: {
+        links: [
+          {
+            html: `Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://github.com/justmert" target="_blank">Mert Köklü</a>`
+          },
+        ],
+      },
+    
       navbar: {
         title: "AaveQL",
+        hideOnScroll: true,
         logo: {
           alt: "AaveQL Logo",
-          src: "img/aaveql.png",
+          src: "img/aaveql.png",  
         },
         items: [
           {
@@ -70,12 +82,13 @@ const config = {
           },
         ],
       },
-      // footer: {
-      //   style: "dark",
-      // },
+      colorMode: {
+        defaultMode: "dark",
+        respectPrefersColorScheme: false,
+      },
       prism: {
-        theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        theme: lightCodeTheme,
       },
     }),
 };

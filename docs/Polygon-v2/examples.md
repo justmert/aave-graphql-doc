@@ -3,6 +3,7 @@ id: examples
 title: Examples
 slug: examples
 sidebar_position: 0
+description: Examples of the Graphql Schema
 toc_min_heading_level: 2
 toc_max_heading_level: 5
 ---

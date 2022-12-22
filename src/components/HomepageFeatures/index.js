@@ -9,8 +9,8 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        {/* <h3>aa</h3> */}
+        {/* <p>{description} www</p> */}
       </div>
     </div>
   );

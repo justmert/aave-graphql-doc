@@ -3,6 +3,7 @@ id: queries
 title: Queries
 slug: queries
 sidebar_position: 1
+description: Queries of the Graphql Schema
 ---
 
 ## _meta

@@ -3,11 +3,39 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ [data-theme='dark'] .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: #2B3A55;
+}
+
+
+[data-theme='light'] .heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #f5cac3;
+}
+
+[data-theme='dark'] .styleCard {
+  border-radius: 10px;
+  border-color: #161d2b;
+  margin: 15px;
+  padding: 15px;
+  max-width: 410px;
+  background-color: #404e66;
+}
+
+[data-theme='light'] .styleCard {
+  border-radius: 10px;
+  border-color: #f5cac3;
+  margin: 15px;
+  padding: 15px;
+  max-width: 410px;
+  background-color: #f8dad5;
 }
 
 @media screen and (max-width: 996px) {
@@ -21,3 +49,40 @@
   align-items: center;
   justify-content: center;
 }
+
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+[data-theme='dark'] .mainButtonDark {
+  border: 2px solid #2EBAC6 !important;
+  margin: 10px !important;
+  border-radius: 0px !important;
+  width: 150px !important;
+  padding: 8px !important;
+}
+[data-theme='dark'] .mainButtonDark:after {
+  border: 2px solid #2EBAC6 !important;
+  background-color: #2EBAC6 !important;
+}
+[data-theme='dark'] .mainButtonDark:hover {
+  background-color: #2EBAC6 !important;
+}
+
+[data-theme='light'] .mainButtonLight {
+  border: 2px solid #B6509E !important;
+  color: black;
+  margin: 10px !important;
+  border-radius: 0px !important;
+  width: 150px !important;
+  padding: 8px !important;
+}
+[data-theme='light'] .mainButtonLight:after {
+  border: 2px solid #B6509E !important;
+  background-color: #B6509E !important;
+}
+[data-theme='light'] .mainButtonLight:hover {
+  background-color: #B6509E !important;
+  color: white !important;
+}
+
+

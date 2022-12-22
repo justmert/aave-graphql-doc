@@ -3,6 +3,7 @@ id: inputObjects
 title: Input objects
 slug: inputObjects
 sidebar_position: 8
+description: InputObjects of the Graphql Schema
 ---
 
 ## ATokenBalanceHistoryItem_filter

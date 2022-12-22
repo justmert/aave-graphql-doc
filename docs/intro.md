@@ -1,5 +1,6 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
+description: Queries of the Graphql Schema
 ---
 
 # Intro to GraphQL
