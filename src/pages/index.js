@@ -133,7 +133,7 @@ export default function Home() {
         <HomepageFeatures />
       </main>
       <div className="container">
-        <div className="row">
+        <div className="row" style={{display: "flex", justifyContent: "center"}}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
