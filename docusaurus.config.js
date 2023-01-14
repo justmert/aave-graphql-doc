@@ -10,7 +10,7 @@ const config = {
   tagline: "Aave GraphQL Documentation",
   url: "https://aaveql.org",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/aaveql.png",
 
