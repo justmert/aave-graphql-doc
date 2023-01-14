@@ -12,54 +12,70 @@ const FeatureList = [
     png: require("@site/static/chains/ethereum.png").default,
     editor: "https://eth-v2.aaveql.org",
     doc: "/docs/category/ethereum-v2",
+    contracts: "/docs/ethereum-v2/contracts",
+
   },
   {
     title: "Polygon-v2",
     png: require("@site/static/chains/polygon.png").default,
     editor: "https://polygon-v2.aaveql.org",
     doc: "/docs/category/polygon-v2",
+    contracts: "/docs/polygon-v2/contracts",
+
   },
   {
     title: "Avalanche-v2",
     png: require("@site/static/chains/avalanche.png").default,
     editor: "https://avalanche-v2.aaveql.org",
     doc: "/docs/category/avalanche-v2",
+    contracts: "/docs/avalanche-v2/contracts",
+
   },
   {
     title: "Polygon-v3",
     png: require("@site/static/chains/polygon.png").default,
     editor: "https://polygon-v3.aaveql.org",
     doc: "/docs/category/polygon-v3",
+    contracts: "/docs/polygon-v3/contracts",
+
   },
   {
     title: "Avalanche-v3",
     png: require("@site/static/chains/avalanche.png").default,
     editor: "https://avalanche-v3.aaveql.org",
     doc: "/docs/category/avalanche-v3",
+    contracts: "/docs/avalanche-v3/contracts",
+
   },
   {
     title: "Optimism-v3",
     png: require("@site/static/chains/optimism.png").default,
     editor: "https://optimism-v3.aaveql.org",
     doc: "/docs/category/optimism-v3",
+    contracts: "/docs/optimism-v3/contracts",
+
   },
   {
     title: "Fantom-v3",
     png: require("@site/static/chains/fantom.png").default,
     editor: "https://fantom-v3.aaveql.org",
     doc: "/docs/category/fantom-v3",
+    contracts: "/docs/fantom-v3/contracts",
+
   },
   {
     title: "Arbitrum-v3",
     png: require("@site/static/chains/arbitrum.png").default,
     editor: "https://arbitrum-v3.aaveql.org",
     doc: "/docs/category/arbitrum-v3",
+    contracts: "/docs/arbitrum-v3/contracts",
   },
   {
     title: "Harmony-v3",
     png: require("@site/static/chains/harmony.png").default,
     editor: "https://harmony-v3.aaveql.org",
     doc: "/docs/category/harmony-v3",
+    contracts: "/docs/harmony-v3/contracts",
   },
 ];
 
@@ -83,7 +99,7 @@ function HomepageHeader() {
   );
 }
 
-function Feature({ png, title, editor, doc }) {
+function Feature({ png, title, editor, doc, contracts }) {
   return (
     <div className={clsx(`col col--4`, styles.styleCard)} style={{paddingBottom: 25, paddingTop:25}}>
       <div className="text--center">
@@ -113,6 +129,22 @@ function Feature({ png, title, editor, doc }) {
               "buttonLight",
               styles.mainButtonDark,
               styles.mainButtonLight
+            )}
+          />
+        </a>
+        <a style={{ textDecoration: "none" }} href={contracts}>
+          <input
+            type="submit"
+            value="Contracts"
+            class={clsx(
+              "buttonDark",
+              "buttonLight",
+              styles.mainButtonDark,
+              styles.mainButtonLight,
+              styles.mainButtonFullDark,
+              styles.mainButtonFullLight,
+              
+              
             )}
           />
         </a>

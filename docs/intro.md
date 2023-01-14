@@ -12,4 +12,4 @@ GraphQL is a query language for your API, and a server-side runtime for executin
 
 This documentation has been written to help you get started with querying Aave data using GraphQL. The documentation has set of examples that you can use to get started with querying Aave data.
 
-You can select the example you want to try out from the sidebar on the left to get started!
+You can select the chain you want to try out graphql examples from the sidebar on the left to get started!
